@@ -1,20 +1,22 @@
-let input = "malayalam";
+let input = "malayalams";
 
-function Palindrome(str) {
-  let Reverse = "";
+function isPalindrome(input) {
+  let start = 0;
+  let End = input.length - 1;
 
-  for (let i = str.length - 1; i >= 0; i--) {
-    Reverse += str[i];
+  while (start < End) {
+    if (input[start] !== input[End]) {
+      return false;
+    } else {
+      start++;
+      End--;
+    }
   }
-  // Check if the reversed string is equal to the original string
-  if (str === Reverse) {
-    return true;
-  } else {
-    return false;
-  }
+  return true;
 }
 
-console.log(Palindrome(input)); // Output: true
-
-input = "madurai";
-console.log(Palindrome(input)); // Output: false
+if (isPalindrome(input) == true) {
+  console.log("given string Palindrome");
+} else {
+  console.log("given string not Palindrome");
+}
