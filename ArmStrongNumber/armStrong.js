@@ -6,6 +6,9 @@ function Armstrong(num) {
   let sum = 0;
   for (let num of arr) {
     sum += Math.pow(parseInt(num), length);
+
+
+    
   }
 
   return num == sum;
