@@ -11,7 +11,13 @@ function Armstrong(num) {
   
   for (let num of arr) {
     sum += Math.pow(parseInt(num), length);
+<<<<<<< HEAD
     console.log(sum)
+=======
+
+
+    
+>>>>>>> fadf4cff075f0fc793d72c2756cf4b43c08153e4
   }
 
   return num == sum;
