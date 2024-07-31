@@ -1,4 +1,4 @@
-let input = "mama";
+let input = "madam";
 
 function Palindrome(str) {
   let first = 0;
