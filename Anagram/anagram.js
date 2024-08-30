@@ -1,6 +1,7 @@
 let String1 = "aab";
 let String2 = "bba";
 
+
 function ChLength(str, ch) {
   let count = 0;
   for (let i = 0; i < str.length; i++) {
@@ -9,6 +10,8 @@ function ChLength(str, ch) {
     }
   }
   return count;
+
+  
 }
 
 function isAnagram(str1, str2) {
